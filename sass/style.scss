@@ -1,7 +1,19 @@
 $bgyellow: #ffff00;
 $bggreen: #2b8674;
+$bgblack:#333;
+$text-white:#f2f2f2;
 $img-color: #aaa;
-
+$bg-light:#777;
+$nav-whitespace: 5px 10px;
+$fontfamily:vazir,Tahoma,'Times New Roman', Times, serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $fontfamily;
+}
 #promot {
     background-color: $bgyellow ;
 }
@@ -12,4 +24,27 @@ header {
 
 .img-color {
     background-color: $img-color;
+}
+nav{
+    background-color: $bgblack;
+    ul{
+        list-style: none;
+        // padding: 0;
+        // display: flex;
+        // flex-direction: row;
+        li{
+            // flex: 1;
+            a{
+                text-decoration: none;
+                color: $text-white;
+                font-size: larger;
+                padding: $nav-whitespace;
+                &:hover{
+                    background-color: $bg-light;
+                }
+            }
+            
+        }
+    }
+
 }
